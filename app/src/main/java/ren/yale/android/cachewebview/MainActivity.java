@@ -125,7 +125,7 @@ public class MainActivity extends Activity {
 
                 break;
             case R.id.btn_get_file:
-                CacheStatus cacheStatus = webview.getWebViewCache().getCacheFile("https://m.baidu.com/static/search/baiduapp_icon.png");
+                CacheStatus cacheStatus = webview.getWebViewCache().getCacheFile(URL);
                 if (cacheStatus.isExist()){
                    File file = cacheStatus.getCacheFile();
                     String extension = cacheStatus.getExtension();
